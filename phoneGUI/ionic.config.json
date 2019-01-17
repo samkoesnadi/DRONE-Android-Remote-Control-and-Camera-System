@@ -1,0 +1,7 @@
+{
+  "name": "phoneGUI",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
