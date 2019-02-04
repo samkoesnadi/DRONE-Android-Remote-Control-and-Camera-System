@@ -1,6 +1,6 @@
 #include "RF24.h"
 #include <ServoTimer2.h> // We use servo timer2 because timer1 is used for PPM
-#include <TinyGPS++.h> // Include the TinyGPS++ library
+//#include <TinyGPS++.h> // Include the TinyGPS++ library
 // #include <NeoSWSerial.h>
 
 ServoTimer2 myservo;
@@ -8,8 +8,8 @@ ServoTimer2 myservo;
 ////////////////////// PPM CONFIGURATION//////////////////////////
 #define channel_number 5  //set the number of channels
 #define sigPin 2  //set PPM signal output pin on the arduino
-#define PPM_FrLen 15000  //set the PPM frame length in microseconds (1ms = 1000µs)
-#define PPM_PulseLen 200  //set the pulse length
+#define PPM_FrLen 22500  //set the PPM frame length in microseconds (1ms = 1000µs)
+#define PPM_PulseLen 300  //set the pulse length
 //////////////////////////////////////////////////////////////////
 
 int ppm[channel_number];
