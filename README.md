@@ -10,7 +10,7 @@ dude-DRONE is aimed for open sourcing a complete, upgradable drone system. In ge
 <br />
 <h3>Installation of hardware:</h3>
 <b>/fritzing</b> is the schematic of the modules circuit. (transmitter side and receiver side) <br />
---- The output CPPM is on Digital 2 and this is connected to Arducopter. The GPS, compass, gyro, and accelerometer are natively provided by Arducopter. <br /><br />
+--- The output CPPM is on Digital 2 and this is connected to Arducopter. The GPS, compass, gyro, and accelerometer are natively provided by Arducopter. <br />
 <b>/controller_holder_CAD</b> has all the STL files that can be 3d printed to construct the casing of controller that holds phone to have better handling.
 
 <br />
@@ -28,7 +28,7 @@ ionic cordova build android
 ```
 
 <h6>Transmitter and receiver code</h6>
-<b>/new_receiver</b> is the Arduino code for receiver side <br /> <br />
+<b>/new_receiver</b> is the Arduino code for receiver side <br />
 <b>/new_transmitter</b> is the Arduino code for transmitter side
 
 <h6>Camera code for Gimbal</h6>
