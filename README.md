@@ -36,10 +36,10 @@ ionic cordova build android
 <br />
 <br />
 
-Figure 1 <br />
+<i>Figure 1 <br />
 ![Screenshot](./assets/fig1.png)
 <br />
-Figure 2 <br />
+Figure 2 <br /></i>
 ![Screenshot](./assets/fig2.png)
 
 <br />
