@@ -35,15 +35,16 @@ ionic cordova build android
 /t3.py needs to be compiled to Raspberry Pi on the drone. For best usage, set it up per startup by configuring init.rc
 
 
+<br />
 
 <hr />
-<b>Appendix</b>
+<b>Appendix</b> <br />
 Figure 1 : <br />
-![Alt text](assets/fig1.png?raw=true "Figure 1")
+![Alt text](assets/fig1.png)
 <br />
 Figure 2
 <br />
-![Alt text](assets/fig2.png?raw=true "Figure 2")
+![Alt text](assets/fig2.png)
 
 
 phoneGUIv2 Workflow:
