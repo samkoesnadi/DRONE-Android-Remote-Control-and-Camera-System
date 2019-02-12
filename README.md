@@ -1,4 +1,4 @@
-dude-DRONE is aimed for open sourcing a complete, upgradable drone system. In general, this repo consists of:
+<h5>DRONE-dude</h5> is aimed for open sourcing a complete, upgradable drone system. In general, this repo consists of:
 - Receiver-transmitter transmission based in Arduino
 - Design of Quadcopter (parts of electronics), 3D Printed Phone holder for Remote Controller
 - Phone Interface for Remote Controller
