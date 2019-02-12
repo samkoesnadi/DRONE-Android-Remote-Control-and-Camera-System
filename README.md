@@ -1,16 +1,16 @@
-<center>![Alt text](assets/fig1.png?raw=true "Figure 1")</center>
-<center>![Alt text](assets/fig2.png?raw=true "Figure 2")</center>
+![Alt text](assets/fig1.png?raw=true "Figure 1")
+![Alt text](assets/fig2.png?raw=true "Figure 2")
 
 dude-DRONE is aimed for open sourcing a complete, upgradable drone system. In general, this repo consists of:
 - Receiver-transmitter transmission based in Arduino
 - Design of Quadcopter (parts of electronics), 3D Printed Phone holder for Remote Controller
 - Phone Interface for Remote Controller
 
-/eCalc.pdf shows the mechanical calculation of the drone (the one of which I own)
+/eCalc.pdf shows the mechanical calculation of the drone (the one of which I own) <br />
 /preflight_check.mp4 shows working wireless connection from phone to the drone.
 
 <h5>Installation of mobile application:</h5>
-I tested my application in Android because I have Android. However, this system can pratically be compiled in various mobile operating system (Android, iOS, Windows Phone).
+I tested my application in Android because I have Android. However, this system can pratically be compiled in various mobile operating system (Android, iOS, Windows Phone). <br />
 
 The app is in the directory phoneGUIv2. The Mobile Application is based in <b>Ionic v4</b>. It now supports basic control of the drone, remote API for camera recording, Flight Modes (from the APM). The window dimension of Huawei in which the App is specifically built is 720 x 360.
 
@@ -22,7 +22,7 @@ ionic cordova build android
 ```
 
 <h6>Transmitter and receiver code</h6>
-/new_receiver is the Arduino code for receiver side
+/new_receiver is the Arduino code for receiver side <br />
 /new_transmitter is the Arduino code for transmitter side
 
 <h6>Camera code for Gimbal</h6>
@@ -30,8 +30,8 @@ ionic cordova build android
 
 
 <h5>Installation of Hardware</h5>
-/fritzing is the schematic of the modules circuit. (transmitter side and receiver side)
---- The output CPPM is on Digital 2 and this is connected to Arducopter. The GPS, compass, gyro, and accelerometer are natively provided by Arducopter.
+/fritzing is the schematic of the modules circuit. (transmitter side and receiver side) <br />
+--- The output CPPM is on Digital 2 and this is connected to Arducopter. The GPS, compass, gyro, and accelerometer are natively provided by Arducopter. <br />
 /controller_holder_CAD has all the STL files that can be 3d printed to construct the casing of controller that holds phone to have better handling.
 
 <hr />
