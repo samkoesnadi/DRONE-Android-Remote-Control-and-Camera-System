@@ -33,20 +33,19 @@ ionic cordova build android
 
 <h6>Camera code for Gimbal</h6>
 /t3.py needs to be compiled to Raspberry Pi on the drone. For best usage, set it up per startup by configuring init.rc
+<br />
 
+Figure 1 <br />
+![Screenshot](./assets/fig1.png)
+<br />
+Figure 2 <br /> <br />
+![Screenshot](./assets/fig2.png)
 
 <br />
 <br />
 
 <hr />
-<b>Appendix</b> <br />
-Figure 1  <br />
-![Alt text](https://raw.githubusercontent.com/samuelmat19/dude-DRONE/assets/fig1.png)
-<br />
-Figure 2
-<br />
-![Alt text](https://raw.githubusercontent.com/samuelmat19/dude-DRONE/assets/fig2.png)
-<br />
+<b>Appendix</b>
 <br />
 phoneGUIv2 Workflow:
 The ElementRef of canvas is created at the page Home, then all the canvas functions are in the canvasProvider so that anybody can use the canvas.
