@@ -34,11 +34,12 @@ ionic cordova build android
 <h6>Camera code for Gimbal</h6>
 /t3.py needs to be compiled to Raspberry Pi on the drone. For best usage, set it up per startup by configuring init.rc
 <br />
+<br />
 
 Figure 1 <br />
 ![Screenshot](./assets/fig1.png)
 <br />
-Figure 2 <br /> <br />
+Figure 2 <br />
 ![Screenshot](./assets/fig2.png)
 
 <br />
