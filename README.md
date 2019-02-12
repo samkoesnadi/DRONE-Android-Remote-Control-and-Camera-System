@@ -1,15 +1,13 @@
-![Alt text](assets/fig1.png?raw=true "Figure 1")
-![Alt text](assets/fig2.png?raw=true "Figure 2")
-
 dude-DRONE is aimed for open sourcing a complete, upgradable drone system. In general, this repo consists of:
 - Receiver-transmitter transmission based in Arduino
 - Design of Quadcopter (parts of electronics), 3D Printed Phone holder for Remote Controller
 - Phone Interface for Remote Controller
 
 /eCalc.pdf shows the mechanical calculation of the drone (the one of which I own) <br />
-/preflight_check.mp4 shows working wireless connection from phone to the drone.
+<b>/preflight_check.mp4 shows working wireless connection from phone to the drone.</b>
 
-<h5>Installation of mobile application:</h5>
+<br />
+<h3>Installation of mobile application:</h3>
 I tested my application in Android because I have Android. However, this system can pratically be compiled in various mobile operating system (Android, iOS, Windows Phone). <br />
 
 The app is in the directory phoneGUIv2. The Mobile Application is based in <b>Ionic v4</b>. It now supports basic control of the drone, remote API for camera recording, Flight Modes (from the APM). The window dimension of Huawei in which the App is specifically built is 720 x 360.
@@ -28,14 +26,19 @@ ionic cordova build android
 <h6>Camera code for Gimbal</h6>
 /t3.py needs to be compiled to Raspberry Pi on the drone. For best usage, set it up per startup by configuring init.rc
 
-
-<h5>Installation of Hardware</h5>
+<br />
+<h3>Installation of mobile application:</h3>
 /fritzing is the schematic of the modules circuit. (transmitter side and receiver side) <br />
 --- The output CPPM is on Digital 2 and this is connected to Arducopter. The GPS, compass, gyro, and accelerometer are natively provided by Arducopter. <br />
 /controller_holder_CAD has all the STL files that can be 3d printed to construct the casing of controller that holds phone to have better handling.
 
 <hr />
 <b>Appendix</b>
+Figure 1 : <br />
+![Alt text](assets/fig1.png?raw=true "Figure 1") <br />
+Figure 2 <br />
+![Alt text](assets/fig2.png?raw=true "Figure 2")
+
 
 phoneGUIv2 Workflow:
 The ElementRef of canvas is created at the page Home, then all the canvas functions are in the canvasProvider so that anybody can use the canvas.
