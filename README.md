@@ -7,6 +7,14 @@ dude-DRONE is aimed for open sourcing a complete, upgradable drone system. In ge
 <b>/preflight_check.mp4 shows working wireless connection from phone to the drone.</b>
 
 <br />
+<br />
+<h3>Installation of hardware:</h3>
+/fritzing is the schematic of the modules circuit. (transmitter side and receiver side) <br />
+--- The output CPPM is on Digital 2 and this is connected to Arducopter. The GPS, compass, gyro, and accelerometer are natively provided by Arducopter. <br />
+/controller_holder_CAD has all the STL files that can be 3d printed to construct the casing of controller that holds phone to have better handling.
+
+<br />
+
 <h3>Installation of mobile application:</h3>
 I tested my application in Android because I have Android. However, this system can pratically be compiled in various mobile operating system (Android, iOS, Windows Phone). <br />
 
@@ -26,17 +34,15 @@ ionic cordova build android
 <h6>Camera code for Gimbal</h6>
 /t3.py needs to be compiled to Raspberry Pi on the drone. For best usage, set it up per startup by configuring init.rc
 
-<br />
-<h3>Installation of mobile application:</h3>
-/fritzing is the schematic of the modules circuit. (transmitter side and receiver side) <br />
---- The output CPPM is on Digital 2 and this is connected to Arducopter. The GPS, compass, gyro, and accelerometer are natively provided by Arducopter. <br />
-/controller_holder_CAD has all the STL files that can be 3d printed to construct the casing of controller that holds phone to have better handling.
+
 
 <hr />
 <b>Appendix</b>
 Figure 1 : <br />
-![Alt text](assets/fig1.png?raw=true "Figure 1") <br />
-Figure 2 <br />
+![Alt text](assets/fig1.png?raw=true "Figure 1")
+<br />
+Figure 2
+<br />
 ![Alt text](assets/fig2.png?raw=true "Figure 2")
 
 
