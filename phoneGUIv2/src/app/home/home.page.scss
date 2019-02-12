@@ -1,0 +1,38 @@
+.ios, .md {
+    app-home {
+        .menuBar {
+            display: flex;
+            // position: fixed;
+            position: relative;
+            // position: absolute;
+            // right: 0px;
+            left: 520px;
+            float: right;
+        }
+      .ion-canvas {
+        position: fixed;
+        z-index:1;
+      }
+      canvas {
+        position : absolute;
+      }
+      .buttoned {
+        // width: 100px;
+        max-width: 14% !important;
+        z-index:4;
+      }
+      img {
+        z-index:0;
+      }
+      #senseLayer {
+        opacity: 0.5;
+        z-index: 3;
+      }
+      #canvasOverlay {
+        z-index: 2;
+      }
+      #canvasBackground {
+        z-index: 1;
+      }
+    }
+}

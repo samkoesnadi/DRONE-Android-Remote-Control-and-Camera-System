@@ -1,7 +1,0 @@
-{
-  "name": "ionic-threejs",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}

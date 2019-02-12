@@ -91,7 +91,7 @@ class Transm {
 };
 
 //Data data; // Here comes all the data necessary
-TransmitData controllerData;
+TransmitData controllerData = {0,0,0,0,0,0};
 TransmitData receiveData;
 Transm* myRadio; // This is the class for transmission
 
@@ -103,12 +103,13 @@ void setup() {
 }
 
 String inString = "";
-const unsigned short totalIndexParse = 5;
+const unsigned short totalIndexParse = 6; // total of Index to Parse from Phone
 //const unsigned short totalIndexParse_toPhone = 15;
-byte *controllerDataArray[] = {&controllerData.throttle,&controllerData.rudder,&controllerData.elevator,&controllerData.aileron,&controllerData.servo};
+byte *controllerDataArray[] = {&controllerData.throttle,&controllerData.rudder,&controllerData.elevator,&controllerData.aileron,&controllerData.servo,&controllerData.aux};
 //byte *receiveDataArray[] = {&receiveData.throttle,&receiveData.rudder,&receiveData.elevator,&receiveData.aileron,&receiveData.servo,&receiveData.aux,&receiveData.GPS_on,&receiveData.satellites_val,&receiveData.hdop_val,&receiveData.lat_val,&receiveData.lng_val,&receiveData.loc_age_val,&receiveData.alt_val,&receiveData.cours_deg_val,&receiveData.speed_kmph};
 
 //the order of sending throttle(a)rudder(b)elevator(c)aileron(d)servo(e)
+// one block would be (num_val)('a')
 
 void loop() {
   // put your main code here, to run repeatedly:
@@ -120,7 +121,7 @@ void loop() {
     }
     // if you get a newline, print the string, then the string's value:
     for(int i=0;i<totalIndexParse;i++){
-      if (inChar == 'a'+i) {
+      if (inChar == 'a'+i) { // check for each letter for consecutive block
         int temp = (inString.toInt());
         if(temp<=255) *controllerDataArray[i] = (inString.toInt());
         // clear the string for new input:

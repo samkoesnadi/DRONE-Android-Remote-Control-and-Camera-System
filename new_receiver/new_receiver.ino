@@ -69,7 +69,7 @@ void check_failSafe() {
 void setPPMValuesFromData(TransmitData* trdata)
 {
 //  Serial.println(throttle_failSafe);
-  unsigned short ppm_2_pre = 900;
+  unsigned short ppm_2_pre = 925;
   if(!throttle_failSafe){
     ppm_2_pre = map(trdata->throttle,    0, 255, 1000, 2000);
   }
