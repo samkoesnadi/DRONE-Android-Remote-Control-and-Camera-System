@@ -41,13 +41,13 @@ ionic cordova build android
 <hr />
 <b>Appendix</b> <br />
 Figure 1  <br />
-![Alt text](https://github.com/samuelmat19/dude-DRONE/blob/master/assets/fig1.png)
+![Alt text](https://raw.githubusercontent.com/samuelmat19/dude-DRONE/blob/master/assets/fig1.png)
 <br />
 Figure 2
 <br />
-![Alt text](https://github.com/samuelmat19/dude-DRONE/blob/master/assets/fig2.png)
+![Alt text](https://raw.githubusercontent.com/samuelmat19/dude-DRONE/blob/master/assets/fig2.png)
 <br />
-
+<br />
 phoneGUIv2 Workflow:
 The ElementRef of canvas is created at the page Home, then all the canvas functions are in the canvasProvider so that anybody can use the canvas.
 
