@@ -3,15 +3,15 @@ dude-DRONE is aimed for open sourcing a complete, upgradable drone system. In ge
 - Design of Quadcopter (parts of electronics), 3D Printed Phone holder for Remote Controller
 - Phone Interface for Remote Controller
 
-/eCalc.pdf shows the mechanical calculation of the drone (the one of which I own) <br />
-<b>/preflight_check.mp4 shows working wireless connection from phone to the drone.</b>
+<b>/eCalc.pdf</b> shows the mechanical calculation of the drone (the one of which I own) <br />
+<b>/preflight_check.mp4</b> shows working wireless connection from phone to the drone.</b>
 
 <br />
 <br />
 <h3>Installation of hardware:</h3>
-/fritzing is the schematic of the modules circuit. (transmitter side and receiver side) <br />
---- The output CPPM is on Digital 2 and this is connected to Arducopter. The GPS, compass, gyro, and accelerometer are natively provided by Arducopter. <br />
-/controller_holder_CAD has all the STL files that can be 3d printed to construct the casing of controller that holds phone to have better handling.
+<b>/fritzing</b> is the schematic of the modules circuit. (transmitter side and receiver side) <br />
+--- The output CPPM is on Digital 2 and this is connected to Arducopter. The GPS, compass, gyro, and accelerometer are natively provided by Arducopter. <br /><br />
+<b>/controller_holder_CAD</b> has all the STL files that can be 3d printed to construct the casing of controller that holds phone to have better handling.
 
 <br />
 
@@ -28,11 +28,11 @@ ionic cordova build android
 ```
 
 <h6>Transmitter and receiver code</h6>
-/new_receiver is the Arduino code for receiver side <br />
-/new_transmitter is the Arduino code for transmitter side
+<b>/new_receiver</b> is the Arduino code for receiver side <br /> <br />
+<b>/new_transmitter</b> is the Arduino code for transmitter side
 
 <h6>Camera code for Gimbal</h6>
-/t3.py needs to be compiled to Raspberry Pi on the drone. For best usage, set it up per startup by configuring init.rc
+<b>/t3.py</b> needs to be compiled to Raspberry Pi on the drone. For best usage, set it up per startup by configuring init.rc
 <br />
 <br />
 
