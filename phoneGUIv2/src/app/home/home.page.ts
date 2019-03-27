@@ -10,6 +10,7 @@ import { SenseComponent } from '../sense';
 import { Serial } from '@ionic-native/serial/ngx';
 import { Hotspot } from '@ionic-native/hotspot/ngx';
 import { CamControlService } from '../cam-control.service';
+import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -51,7 +52,7 @@ export class HomePage {
     // in percentage
     canvasData = [
         [0, 18.6, 67.2, 44.72], // width is with respect to phone's height
-        [0, 82, 67.2, 44.72]
+        [0, 91, 67.2, 44.72]
     ];
 
     servoControlBack = [1,60,70,30,100]; // 1, x center, y center, width, height // this is real pixel
@@ -71,7 +72,7 @@ export class HomePage {
     img_src: string;
     root_dir: string;
     button_rec_name = "REC"
-    constructor(private serial: Serial, private hotspot: Hotspot, public camControl: CamControlService) {
+    constructor(private serial: Serial, private hotspot: Hotspot, public camControl: CamControlService, public plt: Platform) {
       // this.refreshObservable = Observable.interval(250).subscribe(()=>{
       //   //function of canvas refresh for every 250ms
       // });
@@ -102,14 +103,16 @@ export class HomePage {
     }
 
     ngOnInit() {
-
+        if (this.plt.isLandscape()) {
+            this.canvasData[1][1] = 88;
+        }
       this.canvas = new CanvasComponent(this.canvasEl);
       this.overlay = new CanvasComponent(this.overlayEl);
       this.sense = new SenseComponent(this.senseEl);
       // console.log(this.sense.checkDistance([1.1,1],[0,0,0,2]));
 
       for(let i=0;i<this.canvasData.length;i++) {
-        this.canvas.generateCanvasfromArray(this.canvasData[i]);
+        this.canvas.generateCanvasfromArray(this.canvasData[i], this.plt);
       }
       this.canvas.drawRect(this.servoControlBack[1],this.servoControlBack[2],this.servoControlBack[3],this.servoControlBack[4]);
 
@@ -141,7 +144,7 @@ export class HomePage {
           // });
         });
         }).catch((error: any) => {
-          this.overlay.drawText(350,300,"Lost connection");
+          this.overlay.drawText(415,300,"Lost connection");
           // this.readSerialObservable.unsubscribe();
           setTimeout(() => this.openSerialConnection_permission(), 1000)
         });
@@ -252,7 +255,7 @@ export class HomePage {
       // console.log(ins);
       // ins += servo_data+"e"+func_head+"g"+func_ctx+"h";
       // TODO
-      this.serial.write(ins).then((succMsg) => this.overlay.drawText(350,300,succMsg)).catch((err) => {
+      this.serial.write(ins).then((succMsg) => this.overlay.drawText(415,300,succMsg)).catch((err) => {
         this.openSerialConnection_permission();
       });
 

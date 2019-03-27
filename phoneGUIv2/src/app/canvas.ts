@@ -93,12 +93,19 @@ export class CanvasComponent {
      this.ctx.closePath();
   }
 
-  generateCanvasfromArray(obj) { // x-middle, y-middle, and the size it has
+  generateCanvasfromArray(obj, plt) { // x-middle, y-middle, and the size it has
     switch (obj[0]) {
     case 0:
-        obj[1] = obj[1]/100*window.outerWidth;
-        obj[2] = obj[2]/100*window.outerHeight;
-        obj[3] = obj[3]/100*window.outerHeight;
+        if (!plt.isLandscape()) {
+            obj[1] = Math.round(obj[1]/100*plt.height());
+            obj[2] = Math.round(obj[2]/100*plt.width());
+            obj[3] = Math.round(obj[3]/100*plt.width());
+        } else {
+            obj[1] = Math.round(obj[1]/100*plt.width());
+            obj[2] = Math.round(obj[2]/100*plt.height());
+            obj[3] = Math.round(obj[3]/100*plt.height());
+        }
+
       this.drawSquare(obj[1],obj[2],obj[3]);
       break;
     case 1:
