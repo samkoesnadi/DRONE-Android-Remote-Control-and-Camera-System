@@ -42,13 +42,19 @@ export class HomePage {
 
     private readSerialResult = []; // Array the result of reading the serial
 
-    // This is the Object that will be rendered as GUI - remember it is only background
-    canvasData = [ // all the objects to be generated !important
-      [0,134,242,161], // left controller
-      [0,591,242,161] // right controller
+    // // This is the Object that will be rendered as GUI - remember it is only background
+    // canvasData = [ // all the objects to be generated !important
+    //   [0,134,242,161], // left controller
+    //   [0,591,242,161] // right controller
+    // ];
+
+    // in percentage
+    canvasData = [
+        [0, 18.6, 67.2, 44.72], // width is with respect to phone's height
+        [0, 82, 67.2, 44.72]
     ];
 
-    servoControlBack = [1,60,70,30,100]; // 1, x center, y center, width, height
+    servoControlBack = [1,60,70,30,100]; // 1, x center, y center, width, height // this is real pixel
 
     serial_config = {
       baudRate: 19200,
