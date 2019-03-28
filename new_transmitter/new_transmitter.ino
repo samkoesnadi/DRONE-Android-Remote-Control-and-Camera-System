@@ -53,7 +53,8 @@ class Transm {
     radio->begin();
     radio->setDataRate(RF24_250KBPS);
     radio->setPALevel(RF24_PA_MAX);
-    radio->setChannel(108);
+    //radio->setChannel(108);
+    radio->setAutoAck(false);
     initWriting(writingnum);
     initReading(readingnum);
   }
