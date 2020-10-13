@@ -1,0 +1,36 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<!-- <ion-content> -->
+<!-- <ion-list lines="none"> -->
+<div class="menuBar">
+        <ion-button class="buttoned" (click)="toggleRec()" slot="end">
+          {{button_rec_name}}
+        </ion-button>
+
+        <ion-select class="buttoned" slot="end" [(ngModel)]="flightMode" interface="popover" (ionChange)="changeFlightMode(flightMode)">
+          <ion-select-option value="1">1 Stabilize</ion-select-option>
+          <ion-select-option value="2">2 RTL</ion-select-option>
+          <ion-select-option value="3">3 Loiter</ion-select-option>
+          <ion-select-option value="4">4 Alt Hold</ion-select-option>
+          <ion-select-option value="5">5 Pos Hold</ion-select-option>
+          <ion-select-option value="6">6 Auto Tune</ion-select-option>
+        </ion-select>
+</div>
+<!-- </ion-list> -->
+        <div class="ion-canvas">
+            <canvas id="canvasBackground" #canvas></canvas>
+            <canvas id="canvasOverlay" #overlay></canvas>
+            <canvas id="senseLayer" #senseLayer (touchstart)="handleStart($event)" (touchmove)="handleMove($event)" (touchend)="handleEnd($event)"></canvas>
+        </div>
+        <!-- <img [src]="img_src" width="100%" height="100%" style="position:fixed"  /> -->
+        <img async id="mjpegstream" #mjpegstream width="100%" height="100%" style="position:fixed"  />
+        
+
+
+<!-- </ion-content> -->

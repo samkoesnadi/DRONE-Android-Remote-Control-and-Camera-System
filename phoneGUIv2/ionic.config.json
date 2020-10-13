@@ -1,7 +1,0 @@
-{
-  "name": "phoneGUIv2",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
