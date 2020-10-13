@@ -2,10 +2,9 @@
 
 This repository is the soul of my Drone project. I believe with this repo being public, a lot of makers can be benefited by it.
 
-<iframe width="420" height="345" src="https://youtu.be/WT0v0gHLbD4">
-</iframe>
-<iframe width="420" height="345" src="https://youtu.be/DX2KouBjVM8">
-</iframe>
+Videos of proof-of-concept are shown in these links:
+- [Drone camera and Android interface check](https://youtu.be/WT0v0gHLbD4)
+- [Drone system with Android interface explained](https://youtu.be/DX2KouBjVM8)
 
 ### Table of Contents  
 - [The system of the Drone](#the-system-of-the-drone)  
@@ -13,7 +12,13 @@ This repository is the soul of my Drone project. I believe with this repo being 
 - [Hardware Preparation](#hardware-preparation)
 - [Receiver Side](#receiver-side)
 - [Transmitter Side](#transmitter-side)
-- [Future improvement](#emphasis)  
+	- [Phone GUI](#phone-gui)
+		- [Compilation of Phone GUI](#compilation-of-phone-gui)
+- [Raspberry Pi's Camera](#raspberry-pis-camera)
+- [Future improvements](#future-improvements)
+- [CONTRIBUTING](#contributing)
+- [LICENSE](#license)
+- [Appendix](#appendix)
 
 ---
 ## The system of the Drone
@@ -75,6 +80,25 @@ Recording is done as such: record and store the file in the local storage of the
 ## Future improvements
 - [ ] Improve documentation
 - [ ] ...
+
+## CONTRIBUTING
+To contribute to the project, these steps can be followed. Anyone that contributes will surely be recognized and mentioned here!
+
+Contributions to the project are made using the "Fork & Pull" model. The typical steps would be:
+
+1. create an account on [github](https://github.com)
+2. fork this repository
+3. make a local clone
+4. make changes on the local copy
+5. commit changes `git commit -m "my message"`
+6. `push` to your GitHub account: `git push origin`
+7. create a Pull Request (PR) from your GitHub fork
+(go to your fork's webpage and click on "Pull Request."
+You can then add a message to describe your proposal.)
+
+
+## LICENSE
+This open-source project is licensed under MIT License.
 
 ## Appendix
 #### Figure 1
